@@ -27,6 +27,7 @@ const Welcome = () => {
       {Hello()}
       <Hello></Hello>
       <h1>Hello world 😍!</h1>
+      <h1>hello</h1>
     </div>
   );
 }; // React component
