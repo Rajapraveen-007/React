@@ -1,3 +1,7 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./style.css";
+
 // const heading = React.createElement("div", { className: "parent" }, [
 //   React.createElement("div", { className: "child" }, [
 //     React.createElement("h1", { className: "title" }, "Hello world"),
@@ -9,27 +13,24 @@
 //   ]),
 // ]);
 
-const page = React.createElement("h2", {}, "My Favorite Fruits",React.createElement("ol", {}, [
-    React.createElement("li", {}, "Apple"),
-    React.createElement("li", {}, "Banana"),
-    React.createElement("li", {}, "Orange"),
-    React.createElement("li", {}, "Grapes"),
-    React.createElement("li", {}, "Mango"),
-  ]));
+const Hello = () => (
+  <div className="title">
+    <h1>
+      <marquee>Arutperunjothi Is Here😘!</marquee>
+    </h1>
+  </div>
+);
 
-const hello = React.createElement("h1", {}, "hello world");
-
-
-
- console.log(page);
+const Welcome = () => {
+  return (
+    <div>
+      {Hello()}
+      <Hello></Hello>
+      <h1>Hello world 😍!</h1>
+    </div>
+  );
+}; // React component
 
 const root = ReactDOM.createRoot(document.getElementById("root")); // createRoot is a new API in React 18
 
-console.log(page);
-
-root.render(page); // render is a new API in React 18
-
-
-
-
-
+root.render(<Welcome />); // render is a new API in React 18
