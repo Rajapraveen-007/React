@@ -4,8 +4,8 @@
   "description": "",
   "main": "raja.js",
   "scripts": {
-    "test": "test" , 
-    "start": "parcel index.html " 
+    "test": "test",
+    "start": "parcel index.html "
   },
   "keywords": [
     "react"
